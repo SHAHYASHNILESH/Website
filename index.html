@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Personal Portfolio Website-YASH SHAH</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ffe50ccba3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header and Home Page-->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="https://imgs.search.brave.com/wG0tCJSKF2IIWyKUMBfvyutmf6_Lg7CecosbXxuz1xw/rs:fit:1078:334:1/g:ce/aHR0cHM6Ly9lbGVt/ZW50c2luYy5jby5p/bi93cC1jb250ZW50/L3VwbG9hZHMvMjAx/NC8wNS9wb2RjYXN0/LWxvZ28uanBn"
+            class="logo"
+          />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#footer">Contact Me</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="col">
+          <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Yash Nilesh Shah</span> from Mumbai</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About Me Page-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Yash Shah_Photo.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p style="color: white; text-align: left">
+              My name is Yash Nilesh Shah.I am 20 years old.I am pursuing BTech
+              Degree in IT from DJ Sanghvi College of Engineering.I am a
+              Software Engineer.I have created several Projects using MERN Stack
+            </p>
+            <p style="color: white; text-align: left">
+              I am very Hard working,Self-Motivated and a Quick Learner.I always
+              Strive Hard to Find an Optimistic Solution During Tough times
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li><span>C</span><br /></li>
+                <li><span>JAVA</span><br /></li>
+                <li><span>PYTHON</span><br /></li>
+                <li><span>DBMS</span><br /></li>
+                <li><span>HTML</span><br /></li>
+                <li><span>CSS</span><br /></li>
+                <li><span>JS</span><br /></li>
+                <li><span>REACT JS</span><br /></li>
+                <li><span>MONGO DB</span><br /></li>
+                <li><span>NODE JS</span><br /></li>
+                <li><span>EXPRESS JS</span><br /></li>
+                <li><span>FLUTTER</span><br /></li>
+                <li><span>DJANGO</span><br /></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>
+                    I have done One Month Internship at ArbDossier as a SDE
+                    Intern I Collaborated with Co-Founders and Development Team
+                    to Develop a Software aimed at Reducing Workload for Lawyers
+                    and Enabling Strategic Decision-Making
+                  </span>
+                </li>
+                <li>
+                  <span
+                    >I have completed 2 months internship at Solar Secure
+                    Solution as a Full Stack Developer</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span
+                    >My Aggregate Pointer, Covering Semesters 1 to 6, is
+                    9.67</span
+                  >
+                </li>
+                <li><span>I secured 96% in my SSC exam</span></li>
+                <li><span>I secured 91.69% in my HSC exam</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              Web development is the building and maintenance of websites. The
+              field of web development is generally broken down into front-end
+              (the user-facing side) and back-end (the server side).
+            </p>
+            <a
+              href="https://blog.openclassrooms.com/en/2018/03/28/web-development-definition/"
+              style="color: aqua"
+              >Learn More</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Development</h2>
+            <p>
+              Each day, thousands of mobile apps are published to the Google
+              Play and Apple App Stores. Some of these mobile apps are games,
+              others are social networks, and many are ecommerce apps.
+            </p>
+            <a
+              href="https://thebhwgroup.com/blog/mobile-app-development-process"
+              style="color: aqua"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Projects-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="https://imgs.search.brave.com/bExza7BeDxOVHQ3XfVJ3Axrjqm-V_yPEgfAqKjvorGI/rs:fit:1200:700:1/g:ce/aHR0cHM6Ly9jZG4x/LmRvdGVzcG9ydHMu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDIyLzAyLzA3MTE0/MjQwL1dvcmRsZS5q/cGc"
+            />
+            <div class="layer">
+              <h3>Wordle Game</h3>
+              <p>I have created a wordle game using React Js</p>
+              <a href="https://github.com/SHAHYASHNILESH/React-Wordle"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://imgs.search.brave.com/lrZyn25JdNMakpTqgGh4FznrJL7Y0YQ2ZgWzr4Hiu7I/rs:fit:926:402:1/g:ce/aHR0cHM6Ly9tYWhi/dWJvc21hbmUuY29t/L3dwLWNvbnRlbnQv/dXBsb2Fkcy8yMDE5/LzExL2VDb21tZXJj/ZS1XZWJzaXRlLURl/dmVsb3BtZW50Lmpw/Zw"
+            />
+            <div class="layer">
+              <h3>E-Commerce Website</h3>
+              <p>I have created an E-commerce Website using MERN Stack</p>
+              <a href="https://github.com/mayankpatel020810/WP-Project"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img
+              src="https://imgs.search.brave.com/UC5OsgkHDQ0L-VmF3y6F1uxvBHSNJs6_QniyU0yZbr4/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzU1NDQ2/NS9zY3JlZW5zaG90/cy8xNDQ3MTUxMC9t/ZWRpYS8yYjJiMzU5/MmZiNmVjNDg1YWU1/NzA5NmYwMmMwNWI5/ZS5wbmc"
+            />
+            <div class="layer">
+              <h3>Food Restaurant Website</h3>
+              <p>I have created an Food Restaurant Website using MERN Stack</p>
+              <a href="https://github.com/SHAHYASHNILESH/E-Commerce-Website"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/SHAHYASHNILESH" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="column-1">
+            <h1 class="subtitle1">Address</h1>
+            <p>204,Dahisar Vinayak Society</p>
+            <p>Gaothan Roead,Near SiddhiVinayak Temple</p>
+            <p>Dahisar(W),Mumbai:400068</p>
+          </div>
+          <div class="column-2">
+            <h1 class="subtitle1">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> yashshah0408@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 8291257146/9892147224</p>
+          </div>
+          <div class="column-3">
+            <h1 class="subtitle1">Social Media</h1>
+            <div class="social-icons">
+              <a href="https://github.com/SHAHYASHNILESH"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/yash-shah-b95482232"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://instagram.com/iamyash2206?igshid=NmQ2ZmYxZjA="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a
+              href="images/Yash_Nilesh Shah_Resume.pdf"
+              download
+              class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
